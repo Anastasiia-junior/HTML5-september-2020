@@ -7,73 +7,117 @@
     <title>Form</title>
 </head>
 <body>
-    <form action="#" method="POST">
-        <fieldset>
-            <legend>тип</legend>
-            <label for="accessories">
-                аксессуар для интерьера
-                <input id="accessories" type="radio" name="type" value="accessorise">
-            </label>
-            
-            <label for="toy">
-                детская игрушка
-                <input id="toy" type="radio" name="type" value="toy">
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>цвет</legend>
-            <label for="wheit">
-                белый
-                <input id="wheit" type="checkbox" name="wheit" checked>
-            </label>
-            <label for="grey">
-                серый
-                <input id="grey" type="checkbox" name="grey" checked>
-            </label>
-            <label for="tiffany">
-                "тиффани"
-                <input id="tiffany" type="checkbox" name="tiffany">
-            </label>
-            <label for="black">
-                черный
-                <input id="black" type="checkbox" name="black">
-            </label>
-            <label for="pink">
-                розовый
-                <input id="pink" type="checkbox" name="pink">
-            </label>
-            <label for="orange">
-                оранжевый
-                <input id="orange" type="checkbox" name="orange">
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>фио</legend>
-            <label for="surname">
-                фамилия
-                <input type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
-            </label>
-            <label for="name">
-                имя
-                <input type="text" name="name" id="name" placeholder="Введите Ваше имя" required>
-            </label>
-            <label for="surname">
-                отчество
-                <input type="text" name="surname" id="surname" placeholder="Отчество, если желаете">
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>тел</legend>
-            <label for="tel">
-                <input id="tel" type="number" placeholder="+7 XXX XX XX">
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>e-mail</legend>
-            <label for="email">
-                <input id="email" type="email" placeholder="мы не будем спамить, честно!">
-            </label>
-        </fieldset>
-    </form>
+    <main class="container">
+        <form action="#" method="POST">
+            <fieldset class="fieldsets">
+                <div class="fieldsets--wrapper">
+                    <span class="fieldset__title">тип</span>
+                    <ul class="fieldset__list ">
+                        <li class="fieldset__item type-item">
+                            <input  id="accessories" type="radio" name="type" value="accessorise" checked>
+                            <label class="type-item__label" for="accessories">
+                                аксессуар для интерьера
+                            </label>
+                        </li>
+                        <li class="fieldset__item type-item">
+                            <input  id="toy" type="radio" name="type" value="toy">
+                            <label class="type-item__label" for="toy">
+                                детская игрушка
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset class="fieldsets fieldset--color">
+                <div class="fieldsets--wrapper">
+                    <span class="fieldset__title">цвет</span>
+                    <ul class="fieldset__list fieldset__list--checkbox">
+                        <li class="fieldset__item fieldset__item--color">
+                            <input class="visually-hidden" id="wheit" type="checkbox" name="wheit" checked>
+                            <label class="color-item-label" for="wheit">
+                                белый
+                            </label>
+                        </li>
+                        <li class="fieldset__item fieldset__item--color">
+                            <input class="visually-hidden" id="grey" type="checkbox" name="grey" checked>
+                            <label class="color-item-label" for="grey">
+                                серый
+                            </label>
+                        </li>
+                        <li class="fieldset__item fieldset__item--color">
+                            <input class="visually-hidden" id="tiffany" type="checkbox" name="tiffany">
+                            <label class="color-item-label" for="tiffany">
+                                "тиффани"
+                            </label>
+                        </li>
+                        <li class="fieldset__item fieldset__item--color">
+                            <input class="visually-hidden" id="black" type="checkbox" name="black">
+                            <label class="color-item-label" for="black">
+                                черный
+                            </label>
+                        </li>
+                        <li class="fieldset__item fieldset__item--color">
+                            <input class="visually-hidden" id="pink" type="checkbox" name="pink">
+                            <label class="color-item-label" for="pink">
+                                розовый
+                            </label>
+                        </li>
+                        <li class="fieldset__item fieldset__item--color">
+                            <input class="visually-hidden" id="orange" type="checkbox" name="orange">
+                            <label class="color-item-label" for="orange">
+                                оранжевый
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset class="fieldsets">
+                <div class="fieldsets--wrapper">
+                    <span class="fieldset__title">фио</span>
+                    <ul class="fieldset__list">
+                        <li class="fieldset__item item-info">
+                            <label for="surname">
+                                фамилия
+                            </label>
+                            <input type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
+                        </li>
+                        <li class="fieldset__item item-info">
+                            <label for="name">
+                                имя
+                            </label>
+                            <input type="text" name="name" id="name" placeholder="Введите Ваше имя" required>
+                        </li>
+                        <li class="fieldset__item item-info">
+                            <label for="surname">
+                                отчество
+                            </label>
+                            <input type="text" name="surname" id="surname" placeholder="Отчество, если желаете">
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset class="fieldsets fieldset--color">
+                <div class="fieldsets--wrapper">
+                    <span class="fieldset__title">тел</span>
+                    <label class="fieldset__item" for="tel">
+                        <span class="visually-hidden">
+                            введите номер телефона
+                        </span>
+                        <input id="tel" type="number" placeholder="+7 XXX XX XX">
+                    </label>
+                </div>
+                <div class="fieldsets--wrapper">
+                    <span class="fieldset__title">e-mail</span>
+                    <label class="fieldset__item" for="email">
+                        <span class="visually-hidden">
+                            введите номер телефона
+                        </span>
+                        <input id="email" type="email" placeholder="мы не будем спамить, честно!">
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <script src="https://kit.fontawesome.com/f6d9af14da.js" crossorigin="anonymous"></script>
 </body>
 </html>
