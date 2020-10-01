@@ -69,6 +69,7 @@ html {
 .header__h1 {
   margin: 0 0 0 0;
   font-size: 60px;
+  line-height: 60px;
 }
 
 .header__list {
@@ -322,6 +323,8 @@ html {
   background-color: #ffffff;
   color: #445162;
   font-size: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .rates__list {
@@ -388,6 +391,7 @@ footer {
 
 .user-form {
   width: 500px;
+  margin: 0 60px 0 0;
 }
 
 .user-form__item {
@@ -411,18 +415,21 @@ footer {
 .button--form {
   border: none;
   width: 140px;
-  margin: 20px 0 0 0;
+  margin: 20px auto 0 auto;
 }
 
 .contacts__list,
 .cosial-icons__list {
   list-style-type: none;
-  padding: 0 0 0 75px;
+  padding: 0 0 0 0;
   margin: 0;
 }
 
 .contacts__item {
   position: relative;
+  padding: 0px 0 0 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .contacts__link {
@@ -443,14 +450,14 @@ footer {
 .contacts-icon {
   font-size: 25px;
   position: absolute;
-  left: -30px;
+  left: 0px;
 }
 
 .cosial-icons__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0 0 45px;
+  padding: 0;
 }
 
 .cosial-icons__link {
