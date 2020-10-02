@@ -53,19 +53,17 @@ html {
 .container {
     margin: 0 auto;
     width: 1280px;
-    padding: 50px 50px 20px 50px;
+    //padding: 50px;
 }
 
 .header {
     background-color: $font-color;
     color: $background-basic-color;
-}
-
-.header-set {
     display: flex;
     justify-content: space-between;
-    padding: 0 0 30px 0;
+    padding: 50px;
 }
+
 
 .header__h1 {
     margin: 0 0 0 0;
@@ -93,6 +91,12 @@ html {
     top: 7px;
 }
 
+.description {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
 .description__text-wrapper {
     width: 651px;
 }
@@ -112,7 +116,7 @@ html {
 
 .dignity {
     background-color: $background-section-color;
-    //padding: 50px 50px 20px 50px;
+    padding: 50px 50px 20px 50px;
 }
 
 .dignity__h2 {
@@ -150,6 +154,7 @@ html {
 .screenshots {
     display: flex;
     flex-wrap: wrap;
+    padding: 50px 50px 20px 50px;
 }
 
 .screenshots__h2 {
@@ -196,6 +201,7 @@ html {
 .reviews {
     display: flex;
     flex-wrap: wrap;
+    padding: 50px 50px 20px 50px;
 }
 
 .reviews__h2 {
@@ -256,6 +262,9 @@ html {
 .back-color {
     background-color: $background-section-color;
 }
+.rates {
+    padding: 50px;
+}
 
 .rates__h2 {
     width: 100%;
@@ -279,9 +288,9 @@ html {
     border: 2px solid $font-color;
     border-radius: 3px;
     padding: 0 0 20px 0;
-    margin: 0 45px 20px 0;
+    margin: 0 45px 0 0;
     &:last-child {
-        margin: 0 0 20px 0;
+        margin: 0;
     }
 }
 
@@ -346,6 +355,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 50px 50px 20px 50px;
 }
 
 .main-footer__h2 {
@@ -432,15 +442,15 @@ footer {
     &:focus {
         outline: none;
     }
-    &:focus .twitter-icon,
-    &:focus .linked-in-icon {
+    &:focus.twitter-icon,
+    &:focus.linked-in-icon {
         border: none;
         outline: none;
         background-color: #ccc;
     }
-    &:focus .facebook-icon,
-    &:focus .google-icon,
-    &:focus .you-tube-icon {
+    &:focus.facebook-icon,
+    &:focus.google-icon,
+    &:focus.you-tube-icon {
         border: none;
         outline: none;
         color: #ccc;
